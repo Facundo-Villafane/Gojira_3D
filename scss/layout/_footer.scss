@@ -1,0 +1,66 @@
+.footer {
+    background-color: $clr-black;
+    width: 100%;
+
+    .boxContainer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        justify-items: center;
+        align-items: stretch;
+        gap: 1.5rem;
+
+        h3{
+            padding: .5rem 0;
+            font-size: 1.5rem;
+            color: $clr-light;
+        }
+        .box{
+            a{
+                display: block;
+                padding: .5rem 0;
+                font-size: 1rem;
+                color: $clr-light;
+
+                &:hover{
+                    color: $clr-pink;
+                }
+            }
+        }
+        .box4{
+            a{
+                padding: .5rem;
+                font-size: 2.5rem;
+                color: $clr-light;
+
+                &:hover{
+                    color: $clr-blue;
+                }
+            }
+        }
+    }
+    .logo{
+        color: $clr-light;
+        font-size: 3.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-family: "Teko", sans-serif;
+        font-weight: bolder;
+        
+        &:hover{
+            color: $clr-pink;
+        }
+    }
+    .credit {
+        text-align: center;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        font-size: 1rem;
+        color: $clr-light;
+        padding: .5rem;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+
+        span {
+            color: $clr-pink;
+        }
+    }
+}

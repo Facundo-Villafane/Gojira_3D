@@ -1,0 +1,164 @@
+header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    box-shadow: $shadow;
+    z-index: 900;
+
+    .brand {
+        color: $clr-black;
+        font-size: 3.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-family: "Teko", sans-serif;
+        font-weight: bolder;
+
+        &:hover {
+            color: $clr-pink;
+        }
+    }
+
+    .nav_btn {
+        color: $clr-pink;
+        display: block;
+        cursor: pointer;
+        font-size: 35px;
+
+        &-close{
+            float: right;
+            margin: .71em .65em ;
+        }
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 60%;
+        height: 100vh;
+
+        background: $clr-black;
+        border-radius: 0% 0% 0% 5%;
+        display: none;
+
+        &.nav-open{
+            display: block;
+        }
+
+        .menu{
+            display: flex;
+            flex-flow: column;
+            gap: 2em;
+
+            margin-top: 25vh;
+            margin-left: 2em;
+        }
+
+            li {
+                font-size: 3vh;
+                text-decoration: none;
+                color: #fff;
+
+                &.active {
+                    font-weight: 600;
+                    opacity: 1;
+
+                }
+
+            }
+
+            a {
+                font-size: 1.7rem;
+                
+                padding: .5rem 1.5rem;
+                color: #fff;
+
+                &.active{
+                    color: $clr-pink;
+                }
+                &:hover{
+                    color: $clr-blue;
+                }
+            }
+        }
+    .icons{
+        padding-top: 2rem;
+        margin-left: 2em;
+
+        i, a{
+            cursor: pointer;
+            margin-left: .5rem;
+            height: 4.5rem;
+            line-height: 4.5rem;
+            width: 4.5rem;
+            text-align: center;
+            font-size: 1.7rem;
+            color: #FFF;
+            border-radius: 50%;
+
+            &:hover{
+                color: $clr-pink;
+            }
+        }
+    }
+
+    @media (min-width: 784px) {
+
+
+        .nav_btn{
+            display: none;
+        }
+        nav{
+            all: unset;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .icons{
+                padding: 0;
+
+                i, a{
+                    margin: 0;
+                    padding: 0;
+                    color: $clr-black;
+                }
+            }
+
+            div{
+                display: flex;
+                padding: .5em;
+            }
+            
+            a{
+                color: $clr-black;
+            }
+
+            .menu{
+                display: flex;
+                flex-flow: row nowrap;
+                margin: unset;
+                gap: 1em;
+            }
+        }
+    }
+
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #2a2a2a;
+    border-radius: .5rem;
+    padding: .8rem 8rem;
+}
+
+.btn:hover {
+    background: $clr-pink;
+}

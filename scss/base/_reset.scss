@@ -1,0 +1,31 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+html {
+    font-size: 50%;
+    overflow-x: hidden;
+}
+@media (min-width: 1630px) {
+    html{
+        font-size: 90%;
+    }
+}
+body{
+    height: 100%;
+    background: linear-gradient(-45deg, #CC9933, #CC0066, #009999, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+section {
+    padding: 2rem 9%;
+}
