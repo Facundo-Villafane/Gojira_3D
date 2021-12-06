@@ -1015,9 +1015,10 @@ header .icons i:hover, header .icons a:hover {
   outline: none;
   padding-left: 5px;
   background: #009999;
-  color: #000000;
+  color: #fff;
   font-size: 12px;
   font-weight: 300;
+  text-transform: none;
 }
 
 .contact-in_input::-webkit-input-placeholder {
@@ -1046,9 +1047,10 @@ header .icons i:hover, header .icons a:hover {
   padding-top: 5px;
   padding-left: 5px;
   background: #009999;
-  color: #000000;
+  color: #fff;
   font-size: 12px;
   font-weight: 300;
+  text-transform: none;
 }
 
 .contact-in_textarea::-webkit-input-placeholder {
