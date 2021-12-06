@@ -207,7 +207,18 @@
         }
     }
 }
+@media (min-width: 768px){
+    .allProd {
+        margin: 0px 15% 5%;
+        padding-top: 13%;
+    }
+}
+
 @media (min-width: 1024px){
+    .allProd {
+        margin: 0px 15% 5%;
+        padding-top: 7%;
+    }
     .prodContainer {
         display: grid;
         grid-template-columns: repeat(3, minmax(28rem, 1fr));
@@ -216,6 +227,10 @@
     }
 }
 @media (min-width: 1440px){
+    .allProd {
+        margin: 0px 15% 5%;
+        padding-top: 7%;
+    }
     .prodContainer {
         display: grid;
         grid-template-columns: repeat(3, minmax(28rem, 1fr));
