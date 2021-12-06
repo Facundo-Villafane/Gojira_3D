@@ -16,12 +16,6 @@ html {
   overflow-x: hidden;
 }
 
-@media (min-width: 1630px) {
-  html {
-    font-size: 90%;
-  }
-}
-
 body {
   height: 100%;
   background: linear-gradient(-45deg, #CC9933, #CC0066, #009999, #ffffff);
@@ -288,7 +282,7 @@ header .icons i:hover, header .icons a:hover {
 .home {
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .home .homeContainer .featuredBox {
