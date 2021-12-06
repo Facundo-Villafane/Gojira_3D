@@ -1,9 +1,14 @@
+.allProd {
+    margin: 0px 15% 5%;
+    padding-top: 7%;
+}
+
 
 .prodContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 1.5rem;
-    padding-top: 9rem;
+    
 
     .wrapper {
         width: 200px;

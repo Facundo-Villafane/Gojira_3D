@@ -464,13 +464,17 @@ header .icons i:hover, header .icons a:hover {
   }
 }
 
+.allProd {
+  margin: 0px 15% 5%;
+  padding-top: 7%;
+}
+
 .prodContainer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(28rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: 1.5rem;
-  padding-top: 9rem;
 }
 
 .prodContainer .wrapper {
